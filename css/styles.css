@@ -1,0 +1,127 @@
+/*  Fondo de section #fab5ba Fondo del footer #fe2400 Fondo de titulos #58172b
+*/
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 20px;
+    color: #000;
+}
+
+h2 {
+    color: #58172b;
+    font-size: 2em;
+    font-weight: bold;
+}
+
+h1 {
+    /* position: absolute; */
+    background: linear-gradient(to right, #58172b 14.3%, #fe2400 14.3%);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+}
+
+.container {
+    height: 100vh;
+    display: grid;
+    grid-template-rows: 20%;
+    grid-template-columns: 20%;
+}
+
+.glass {
+    width: 55%;
+    height: 220px;
+    background-color: rgba(254, 38, 0, 0.788);
+    grid-row: 1;
+    grid-column: 1;
+    z-index: 2;
+}
+
+.section {
+    grid-row: 1/ 6;
+    grid-column: 1/span 3;
+    background: #fab5ba;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 5% 15% 25% 5%;
+}
+
+.title {
+    font-size: 6em;
+    /* color: #fe2400; */
+    align-content: left;
+    z-index: 3;
+}
+
+.section-link {
+    text-decoration: none;
+    background-color: #000;
+    color: #fab5ba;
+    padding: 0;
+    margin: 0;
+    width: 14%;
+    text-align: center;
+    transition: 0.3s;
+}
+
+.section-link:hover {
+    color: #fe2400;
+}
+
+.article {
+    grid-row: 1/ 3;
+    grid-column: 4/5;
+    padding: 15%;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.person {
+    display: flex;
+    padding: 15px;
+    align-items: center;
+    justify-content: left;
+}
+
+.avatar {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    justify-self: center;
+    padding-right: 30px;
+}
+
+.Profile-Info {
+    padding: 60px 0;
+    transition: 0.3s
+}
+
+.Profile-Info:hover {
+    color: #fe2400;
+}
+
+.footer {
+    grid-row: 5;
+    grid-column: 4/5;
+    background-color: #fe2400;
+}
+
+.footer__title {
+    display: flex;
+    justify-content: center;
+    padding: 15%;
+}
+
+.footer__title h3 {
+    color: #fe2400;
+    background-color: #58172b;
+    padding-top: 10px;
+    text-indent: 0;
+    font-size: 5em;
+    /* font-family: 'Holtwood One SC', serif; */
+    font-family: 'Black Han Sans', sans-serif;
+}
